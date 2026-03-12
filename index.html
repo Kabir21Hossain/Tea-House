@@ -30,10 +30,11 @@
 
 <body>
 
-    <section class="grid  grid-cols-1 md:grid-cols-2 mx-auto container my-[100px] ">
+    <!-- banner section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 mx-auto container px-4 lg:px-0 my-10 md:my-[100px]">
         <div class="banner-left space-y-7.5">
-            <h2 class="text-[80px] font-bold">It's good <br>
-                tea time at The <br> Tea House
+            <h2 class="text-5xl md:text-[80px] font-bold leading-tight md:leading-none">It's good <br class="hidden md:block">
+                tea time at The <br class="hidden md:block"> Tea House
             </h2>
 
             <p class="text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum <br>
@@ -41,18 +42,18 @@
             </p>
 
             <button
-                class="w-50 h-16 rounded-sm font-bold text-[#FFFFFF] px-5 py-3 bg-gradient-to-r from-[rgba(255,0,0,1)] from-0% via-[rgba(255,137,56,1)] via-100% to-transparen">Explore
-                More
-                <span class="-rotate-45 inline-block ml-0.5 h-6 w-6"><i class="fa-solid fa-arrow-right"></i></span>
+                class="w-48 h-16 rounded-sm font-bold text-[#FFFFFF] px-5 py-3 bg-gradient-to-r from-[rgba(255,0,0,1)] from-0% via-[rgba(255,137,56,1)] via-100% to-transparent flex items-center justify-center gap-2 hover:scale-102 hover:outline-1">
+                Explore More
+                <span class="-rotate-45 inline-block h-6 w-6"><i class="fa-solid fa-arrow-right"></i></span>
             </button>
 
         </div>
 
-        <div class="banner-right flex justify-end items-end relative">
-            <img src="tea-house-resources/images/banner.png" alt="banner">
+        <div class="banner-right flex justify-center md:justify-end items-end relative mt-12 md:mt-0">
+            <img src="tea-house-resources/images/banner.png" alt="banner" class="w-full max-w-sm md:max-w-none">
 
             <div
-                class="w-[250px] h-[100px] bg-white flex gap-2  justify-around items-center absolute left-[220px] bottom-[25px]  px-[15px] shadow-lg rounded-lg">
+                class="w-[250px] h-[100px] bg-white flex gap-2 justify-around items-center absolute left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[220px] bottom-[-30px] md:bottom-[25px] px-[15px] shadow-lg rounded-lg">
                 <img src="tea-house-resources/images/Group 5.png" alt="">
 
                 <div class="rating">
@@ -64,16 +65,17 @@
         </div>
     </section>
 
-    <section class="feature container mx-auto text-center">
+    <!-- featured products -->
+    <section class="feature container mx-auto text-center px-4 lg:px-0 mt-20 md:mt-0">
 
-        <h3 class="text-4xl font-extrabold mb-5 ">Our Featured Products</h3>
-        <p class="text-[#777777] text-wrap mb-12.5">There are many variations of passages of Lorem Ipsum available, but
+        <h3 class="text-3xl md:text-4xl font-extrabold mb-5 ">Our Featured Products</h3>
+        <p class="text-[#777777] text-wrap mb-12.5 px-4 md:px-0">There are many variations of passages of Lorem Ipsum available, but
             the
-            majority have suffered alteration in some form, <br>
+            majority have suffered alteration in some form, <br class="hidden md:block">
             by injected humour, or randomised words which don't look
             even slightly believable. </p>
 
-        <div class="card-section flex flex-col md:flex-row gap-6 justify-center items-center mb-40 ">
+        <div class="card-section flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-6 justify-center items-center mb-40 ">
 
             <div
                 class="card  rounded-lg  shadow-md w-[267px] h-[391px] bg-gradient-to-b from-gray-100 to-gray-200 flex flex-col items-center">
@@ -121,42 +123,44 @@
 
     </section>
 
-    <section class="basic container mx-auto flex flex-col md:flex-row gap-[52px] justify-center mb-10">
-        <div class="photos grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-3 gap-[30px]">
+    <!-- basic container -->
+    <section class="basic container mx-auto px-4 lg:px-0 flex flex-col md:flex-row gap-[52px] justify-center mb-10 ">
+        <div class="photos grid grid-cols-1 md:grid-cols-2 md:grid-rows-3 gap-6 md:gap-[30px] w-full md:w-1/2 h-auto">
+            
             <div
-                class="bg-gradient-to-r from-pink-200 from-0% to-pink-50 to-100% w-full md:max-w-[238px] md:max-h-[136px]  rounded-md shadow-md">
+                class="bg-gradient-to-r from-pink-200 from-0% to-pink-50 to-100% w-full h-24 md:h-auto rounded-md shadow-md row-span-1">
             </div>
             <div
-                class="orange  md:row-span-2 bg-gradient-to-b from-[#E6A623] from-10% to-[rgba(230, 166, 35, 0.1)] to-100% flex justify-center items-center rounded-md shadow-md">
-                <img src="tea-house-resources/images/fresh-1.png" alt="orange juice"></div>
+                class="orange row-span-2 bg-gradient-to-b from-[#E6A623] from-10% to-[rgba(230, 166, 35, 0.1)] to-100% flex justify-center items-center rounded-md shadow-md p-2 md:p-0 h-100 md:h-auto">
+                <img src="tea-house-resources/images/fresh-1.png" alt="orange juice" class="w-full h-100 md:h-auto object-contain"></div>
             <div
-                class="green   md:row-span-2 bg-gradient-to-b from-[#577639] from-10% to-[rgba(230, 166, 35, 0.1)] to-100% flex justify-center items-center rounded-md shadow-md">
-                <img src="tea-house-resources/images/fresh-2.png" alt="green tea"></div>
+                class="green row-span-2 md:row-span-2 bg-gradient-to-b from-[#577639] from-10% to-[rgba(230, 166, 35, 0.1)] to-100% flex justify-center items-center rounded-md shadow-md p-2 md:p-0 h-100 md:h-auto">
+                <img src="tea-house-resources/images/fresh-2.png" alt="green tea" class="w-full h-100 md:h-auto object-contain"></div>
             <div
-                class="gray bg-gradient-to-r from-gray-300 from-0% to-gray-100 to-100% w-full md:max-w-[238px] md:max-h-[136px] rounded-md shadow-md ">
+                class="gray bg-gradient-to-r from-gray-300 from-0% to-gray-100 to-100% w-full h-24 md:h-auto rounded-md shadow-md ">
             </div>
 
         </div>
 
-        <div class="brief max-w-[582px] max-h-[521px] space-y-12.5">
+        <div class="brief w-full md:w-1/2 max-w-[582px] h-auto lg:max-h-[521px] space-y-10 lg:space-y-12.5 my-auto">
 
-            <div class="1st-box w-full h-[283px] space-y-5  mb-40  md:mb-4 ">
+            <div class="1st-box w-full h-auto lg:h-[283px] space-y-5 mb-10 lg:mb-4 ">
 
-                <h3 class="text-[45px] font-extrabold text-left">Great Tea, Freshly Presented</h3>
-                <p class="text-[#777777] text-4 font-medium">The meaning of gong cha is chanese is to provide the best
+                <h3 class="text-3xl md:text-[45px] font-extrabold text-left leading-tight">Great Tea, Freshly Presented</h3>
+                <p class="text-[#777777] text-base font-medium">The meaning of gong cha is chanese is to provide the best
                     tea to emperor from all possessions . It
                     represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply
                     appreciated by its custoers because of good words of mouth and unique customized service orginated
                     from Taiwan.</p>
             </div>
 
-            <div class="2nd-box space-y-5 text-left max-w-[458px] max-h-[208px] ">
-                <h4 class="text-5 font-extrabold mb-2.5">unique Test</h4>
-                <p class="text-[#777777] text-4 font-medium">A Unique and different style from other teapots gives a
+            <div class="2nd-box space-y-5 text-left w-full max-w-[458px] h-auto lg:max-h-[208px] ">
+                <h4 class="text-xl font-extrabold mb-2.5">Unique Taste</h4>
+                <p class="text-[#777777] text-base font-medium">A Unique and different style from other teapots gives a
                     luxurious and minimalist impression </p>
 
-                <h4 class="text-5 font-extrabold mb-2.5">Premium Quality</h4>
-                <p class="text-[#777777] text-4 font-medium">Premium Quality that makes tea more elegant and more
+                <h4 class="text-xl font-extrabold mb-2.5">Premium Quality</h4>
+                <p class="text-[#777777] text-base font-medium">Premium Quality that makes tea more elegant and more
                     durable when you use it.</p>
 
 
@@ -169,11 +173,11 @@
     <!-- Meet super Client section -->
 
     <section
-        class="client container mx-auto mt-[150px] md:my-[130px] max-w-[1140px] flex flex-col md:flex-row items-center justify-center gap-9 bg-gradient-to-r from-[#FF8938] from-0% to-[#FF0000] to-100% rounded-lg pl-[70px] pt-[85px] pb-[85px] pr-[190px]">
+        class="client container mx-auto mt-[100px] lg:my-[130px] w-11/12 lg:max-w-[1140px] flex flex-col lg:flex-row items-center justify-center gap-9 bg-gradient-to-r from-[#FF8938] from-0% to-[#FF0000] to-100% rounded-lg p-8 lg:pl-[70px] lg:pt-[85px] lg:pb-[85px] lg:pr-[190px]">
 
-        <div class="intro max-w-[440px]">
-            <h2 class="text-[45px] text-white font-extrabold mb-5">Meet Our Super Clients</h2>
-            <p class="font-medium text-4 text-[#F4F4F4] mb-7.5">There are many variations of passages of Lorem Ipsum
+        <div class="intro w-full lg:max-w-[440px] text-center lg:text-left">
+            <h2 class="text-3xl md:text-[45px] text-white font-extrabold mb-5 leading-tight">Meet Our Super Clients</h2>
+            <p class="font-medium text-base text-[#F4F4F4] mb-7.5">There are many variations of passages of Lorem Ipsum
                 available, but the majority have suffered alteration in some form, by injected humour, or randomised
                 words which don't look even slightly believable. </p>
             <button class="w-[139px] h-[56px] rounded-lg px-4 py-3 text-center bg-white text-xl">
